@@ -14,12 +14,12 @@ public class Customer {
         saving = new Account("Saving");
     }
 
-    public Account getAccount(String name) {
+    public Account getAccount(String name) { //returns checking or saving account based on name
         if (name.equals("Checking")) {
             return checking;
         }
         return saving;
     }
 
-    public String getName() {return name;}
+    public String getName() {return name;} //return customer name
 }

@@ -15,21 +15,21 @@ public class Account {
         return name;
     }
 
-    public double getBalance() {
+    public double getBalance() { //not really needed
         return balance;
     }
 
-    public void setBalance(double bal) {
+    public void setBalance(double bal) { //not really needed
         balance = bal;
     }
 
-    public void withdraw(double amount) {
+    public void withdraw(double amount) { //withdraws money
         setBalance(balance - amount);
         System.out.println(" Withdrawal Successful\n" +
                            " Balance: " + getBalance());
     }
 
-    public void deposit(double amount) {
+    public void deposit(double amount) { //deposits money
         setBalance(balance + amount);
         System.out.println(" Deposit Successful\n" +
                            " Balance: " + getBalance());
