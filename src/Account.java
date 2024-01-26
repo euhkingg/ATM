@@ -4,11 +4,15 @@ public class Account {
     //Should have methods to update the account balance (add or remove money).
     //Should include any other static or instance variables and/or methods, including getters/setters and private helper methods, that you determine are necessary to implement the requirements.
 
-    private String name;
+    private final String name;
     private double balance;
 
     public Account(String name) {
+        this.name = name;
+    }
 
+    public String getName() {
+        return name;
     }
 
     public double getBalance() {

@@ -6,14 +6,12 @@ public class Customer {
     //Should have a method to update the customer’s PIN.
     //Should include any other static or instance variables and/or methods, including getters/setters and private helper methods, that you determine are necessary to implement the requirements.
     private final String name;
-    private int PIN;
     private final Account checking;
     private final Account saving;
-    public Customer(String name, int pin) {
-        PIN = pin;
+    public Customer(String name) {
         this.name = name;
-        checking = new Account("checking");
-        saving = new Account("saving");
+        checking = new Account("Checking");
+        saving = new Account("Saving");
     }
 
     public Account getAccount(String name) {
@@ -24,9 +22,4 @@ public class Customer {
     }
 
     public String getName() {return name;}
-
-
-    public void printAccountOptions() {
-        System.out.println(" ");
-    }
 }
